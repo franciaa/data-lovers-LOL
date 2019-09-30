@@ -1,0 +1,200 @@
+body {
+  background-color: #26252d;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+#welcome {
+  color: #BE9E2E;
+  margin-right: 800px;
+}
+
+#font2 {
+  color: #BE9E2E;
+  margin-left: 800px;
+  margin-top: -60px;
+}
+
+#next {
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
+  margin-left: 45%;
+  margin-top: -55px;
+  border-color: gold;
+}
+
+#header1 {
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(50deg, rgb(245, 247, 123), #E0BC3B, #BE9E2E);
+}
+
+#logo {
+  margin-left: 15px;
+}
+
+.slider {
+  width: 95%;
+  height: 700px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: changee 15s infinite;
+  animation-timing-function:linear;
+}
+
+.slider li {
+  list-style: none;
+}
+
+.images {
+  width: 1300px;
+  height: 355px;
+}
+
+.select {
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+#selects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 160px;
+  margin-right: 80px;
+  margin-top: -5%;
+}
+
+#root {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+
+.imagen-lol {
+  width: 200px;
+  height: 190px;
+  border-radius: 10px;
+}
+
+.champions {
+  background-color: rgb(231, 220, 220);
+  text-align: center;
+  margin-top: 20px;
+}
+
+#calculation {
+  margin-top: -20px;
+}
+
+#namee {
+  padding: 0 0 0 50px;
+}
+
+.flip-card {
+  background-color: rgb(194, 165, 63);
+  width: 210px;
+  height: 315px;
+  margin-top: 50px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 10%;
+  height: 10%;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: relative;
+  width: 10%;
+  height: 10%;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+  padding: 0;
+  margin: 0;
+}
+
+/* keyframes Es para dar animaciones especificamente en este caso al carrusel*/
+
+@keyframes changee {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -110%;
+  }
+  45% {
+    margin-left: -110%;
+  }
+  50% {
+    margin-left: -210%;
+  }
+  70% {
+    margin-left: -210%;
+  }
+  75% {
+    margin-left: -310%;
+  }
+  100% {
+    margin-left: -310;
+  }
+}
+
+/*******Tamaño celular*******/
+
+@media only screen and (max-width:768px) {
+  #next {
+    margin-left: 110px;
+    margin-top: 60px;
+  }
+  #selects {
+    width: 60px;
+    height: 40px;
+    flex-flow: wrap;
+    margin-top: 20px;
+  }
+  .champions {
+    display: none;
+  }
+  #calculation {
+    margin-top: 35%;
+  }
+  .images {
+    width: 420px;
+    height: 200px;
+  }
+
+  #welcome {
+    padding: 10px;
+    width: 300px;
+height: 100px;
+
+  }
+
+  }

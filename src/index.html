@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>InfoGame</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <section id="firts-page">
+    <img src="https://i.ibb.co/xJndNW4/Logo-Sample-By-Tailor-Brands-11-1.png">
+    <div class="slider">
+      <ul>
+        <li><img class="images" src="https://i.ibb.co/L9cMT5g/League-of-Legends-Huge-leak-details-new-champion-skins-and-planned-champion-updates-for-Season-9.jpg" alt="League-of-Legends-Huge-leak-details-new-champion-skins-and-planned-champion-updates-for-Season-9" ></li>
+        <li><img class="images" src="https://i.ibb.co/cwNZjCh/League-Of-Legends-Gameplay-9.jpg" alt=""></li>
+        <li><img class="images" src="https://i.ibb.co/Tc0F5VL/Calendario-Mundial-League-of-Legends-1176492385-106773-1440x600.jpg" alt="Calendario-Mundial-League-of-Legends-1176492385-106773-1440x600"></li>
+        <li><img class="images" src="https://i.ibb.co/prG57PJ/League-Of-Legends-Gameplay-9.jpg" alt=""></li>
+      </ul>
+
+      <h3 id="welcome" class="gold">Bienvenido
+        ¿Quieres descubrir los tipos de tus personajes favoritos? ¿Con cual deberias jugar para ser el mejor?
+      </h3>
+      <h3 id="font2" class="gold">En INFOGAME esta todo lo que necesitas, para continuar presiona el boton </h3>
+      <button id="next">Continuar</button>
+    </div>
+  </section>
+
+
+  <section id="second-page" class="second-page">
+    <header id="header1">
+      <img id="logo" src="https://i.ibb.co/xJndNW4/Logo-Sample-By-Tailor-Brands-11-1.png">
+
+    </header>
+
+
+    <div id="selects">
+
+      <div class="select-tag">
+        <select class="select" id="select-tags">
+         <option value="" selected >Roles</option>
+         <option value="Assassin">Asesino</option>
+         <option value="Tank">Tanque</option>
+         <option value="Mage">Mago</option>
+         <option value="Support">Soporte</option>
+         <option value="Marksman">Tirador</option>
+         <option value="Fighter">Luchador</option>
+        </select>
+      </div>
+
+      <div class="select-partype">
+        <select class="select" id="select-partype">
+          <option value="" selected>Tipos</option>
+          <option value="BloodWell">Pozo sangriento</option>
+          <option value="MP">mp</option>
+          <option value="Energy">energia</option>
+          <option value="None">none</option>
+          <option value="Gnarfury">furioso</option>
+          <option value="Battlefury">furia de batalla</option>
+          <option value="Rage">rabioso</option>
+          <option value="Ferocity">feroz</option>
+          <option value="Heat">calor</option>
+          <option value="Wind">viento</option>
+        </select>
+      </div>
+
+      <div id="select-order">
+        <select name="select" id="name" class="select">
+          <option value="value1">Ordena</option>
+          <option value="a-z">a-z</option>
+          <option value="z-a">z-a</option>
+        </select>
+      </div>
+      <a href="https://lan.leagueoflegends.com/es/game-info/" target="»_blank»"> <button id="info" class="select" type="button">Más información</button></a>
+
+
+
+    </div>
+    </div>
+    <h1 class="champions">Datos de Campeones</h1>
+    <div id="calculation" class="champions"></div>
+  </section>
+
+  <div id="calculation"></div>
+  <div id="root"> </div>
+
+  <script src="./data/lol/lol.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
